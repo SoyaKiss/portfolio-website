@@ -1,0 +1,444 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* This is the new Google Font that goes in the Body for all pages  */
+body {
+    font-family:'Darker Grotesque', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+/* This is the navigation bar */
+nav {font-size: 16px;}
+
+
+/* This is for all anchor tags */
+a:link {color: #000813;}
+a:visited {color: #000813;}
+a:hover {color: #ffc300;}
+a:active {color: #013565;}
+
+/* This is for the links on the contact + portfolo; class name 'two' */
+a.two:link {color: #ffc300}
+a.two:visited {color: #013565}
+a.two:hover {color: #fff}
+
+
+/* This is the navigation list*/
+.navigation-list__item {font-size: 24px;}
+
+h1 {color: #013565;}
+
+
+/*This is the contact form */
+.standard-label {
+    font-size: 24px;
+}
+
+/*Address, Telephone number and to Email Me*/
+.contact-info {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*Icons 8 shout-out*/
+.icons_note {
+    font-size: 14px;
+}
+
+
+/*This is table items in Profile Section*/
+.skill_title_headers {
+    font-size: 24px;
+}
+
+.me_title_header {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.table_body_items {
+    line-height: 1.6;
+}
+
+table {
+  min-width: 705px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffc300;
+}
+
+.mini_horiz_bar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr:hover {
+  background-color: #ffc300;
+}
+
+
+/*this is for the buttons*/
+
+.primary_button {
+    background-color: #fff;
+    color: #000813;
+    border: 2px solid #013565;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0.6;
+        
+}
+
+.button {
+    background-color: #fff;
+    color: #000813;
+    border: 2px solid #013565;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0.6;
+        
+}
+
+.primary_button:hover {
+    background-color: #013565;
+    color: #ffc300;
+    opacity: 1;
+}
+
+.button:hover {
+    background-color: #013565;
+    color: #ffc300;
+    opacity: 1;
+}
+
+
+
+
+.profile__portrait {
+    float: left;
+    width: 224px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+
+
+/*This is the footer section*/
+
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+
+/* on Index Page */
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.my-intro-text {
+    text-align: left;
+}
+
+/* this is the default setting for overall width + padding + margins. Forces padding and border to be included in final width 
+instead of them being added to the width */
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.page-footer, .icons_note {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+
+
+/* This is the page header/navigation bar */
+
+.page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+}
+
+/* Navigation Lists, my Profile List */
+.navigation-list, .my_interests_list {
+    list-style-type: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* this is on the portfolio page; the GRID */
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+/* start grid fallback */
+.grid__item {
+    display: inline-block;
+    width: 33%;
+    padding: 20px;
+}
+
+/* end grid fallback */
+
+@supports (display:grid) {
+.grid {
+    display: -ms-grid;
+    display: grid;
+    /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0;
+}
+
+
+.grid__item {
+    background-color: #013565;
+    width: auto;
+    min-height: auto;
+    margin: 0; 
+    border-radius: 10px;
+    color: #ffc300;
+}
+
+}
+
+.project_title_name {
+    margin: 0;
+    color: #ffc300
+  
+}
+
+.github_link {
+  color: #013565
+}
+
+
+
+/*Media Queries; adjusts sizing per screen variations*/
+
+@media all and (max-width: 500px) {
+    .grid {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+
+@media all and (min-width: 501px) and (max-width: 750px){
+    .grid {
+      -ms-grid-columns: 1fr 10px 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+@media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+
+/* this is on the profile page */
+
+  .profile_interests_list {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.my_interests_list {
+    text-align: left;
+    padding: none;
+    line-height: 1;
+    margin: 5px 0;
+}
+
+
+/* This is on the Contact page; last page */
+
+.contact_page {
+  max-width: 500PX;
+  height: 100%;
+  text-align: center;
+  background-color: #013565;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.contact_page_header {
+  color: #ffc300;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.standard-label {
+  color: #ffc300;
+  text-align: left;
+}
+
+.form_input_section {
+  text-align: left;
+  padding: 5px;
+}
+
+/* This is the contact form */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  width: 200px;
+  background-color: #ffc300;
+  color: #013565;
+  padding: 5px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-info {
+  color: #ffc300}
+
+
+
+/* Transition will be a 1.5x enlarged icon button for social media links */
+
+.icon_links {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  width: 40px;
+  height: 40px;
+}
+
+.icon_links:hover {
+  -webkit-transform: scale(1.5, 1.5);
+      -ms-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+
+/* This is the animation section */
+
+  .my_logo_slider_right {
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-name: logo_move;
+            animation-name: logo_move;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+
+  @-webkit-keyframes logo_move {
+    from {
+      -webkit-transform: translate(280px, 75px);
+              transform: translate(280px, 75px);
+    }
+    to {
+      -webkit-transform: translate(910px, 48px);
+              transform: translate(910px, 48px);
+    }
+   }
+
+  @keyframes logo_move {
+    from {
+      -webkit-transform: translate(280px, 75px);
+              transform: translate(280px, 75px);
+    }
+    to {
+      -webkit-transform: translate(910px, 48px);
+              transform: translate(910px, 48px);
+    }
+   }
+

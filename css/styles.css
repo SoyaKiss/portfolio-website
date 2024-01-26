@@ -1,0 +1,392 @@
+:root {
+  --darkerBlue: #000813;
+  --mediumBlue: #001d3d;
+  --blue: #013565;
+  --darkerYellow: #ffc300;
+  --yellow: #ffd60a;
+  --white: #fff;
+  --fontSize24: 24px;
+}
+
+
+/* This is the new Google Font that goes in the Body for all pages  */
+body {
+    font-family:'Darker Grotesque', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+/* This is the navigation bar */
+nav {font-size: 16px;}
+
+
+/* This is for all anchor tags */
+a:link {color: var(--darkerBlue);}
+a:visited {color: var(--darkerBlue);}
+a:hover {color: var(--darkerYellow);}
+a:active {color: var(--blue);}
+
+/* This is for the links on the contact + portfolo; class name 'two' */
+a.two:link {color: var(--darkerYellow)}
+a.two:visited {color: var(--blue)}
+a.two:hover {color: var(--white)}
+
+
+/* This is the navigation list*/
+.navigation-list__item {font-size: var(--fontSize24);}
+
+h1 {color: var(--blue);}
+
+
+/*This is the contact form */
+.standard-label {
+    font-size: var(--fontSize24);
+}
+
+/*Address, Telephone number and to Email Me*/
+.contact-info {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*Icons 8 shout-out*/
+.icons_note {
+    font-size: 14px;
+}
+
+
+/*This is table items in Profile Section*/
+.skill_title_headers {
+    font-size: var(--fontSize24);
+}
+
+.me_title_header {
+    font-size: var(--fontSize24);
+    font-style: italic;
+}
+
+.table_body_items {
+    line-height: 1.6;
+}
+
+table {
+  min-width: 705px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--darkerYellow);
+}
+
+.mini_horiz_bar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr:hover {
+  background-color: var(--darkerYellow);
+}
+
+
+/*this is for the buttons*/
+
+.primary_button, 
+.button {
+    background-color: var(--white);
+    color: var(--darkerBlue);
+    border: 2px solid var(--blue);
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0.6;
+        
+}
+
+.primary_button:hover,
+.button:hover {
+    background-color: var(--blue);
+    color: var(--darkerYellow);
+    opacity: 1;
+}
+
+
+
+
+.profile__portrait {
+    float: left;
+    width: 224px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+
+
+/*This is the footer section*/
+
+.page-footer {
+    clear: both;
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+
+/* on Index Page */
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.my-intro-text {
+    text-align: left;
+}
+
+/* this is the default setting for overall width + padding + margins. Forces padding and border to be included in final width 
+instead of them being added to the width */
+* {
+    box-sizing: border-box;
+}
+
+.page-footer, .icons_note {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* This is the page header/navigation bar */
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header__item {
+    flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+/* Navigation Lists, my Profile List */
+.navigation-list, .my_interests_list {
+    list-style-type: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* this is on the portfolio page; the GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+/* start grid fallback */
+.grid__item {
+    display: inline-block;
+    width: 33%;
+    padding: 20px;
+}
+
+/* end grid fallback */
+
+@supports (display:grid) {
+.grid {
+    display: grid;
+    /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0;
+}
+
+
+.grid__item {
+    background-color: var(--blue);
+    width: auto;
+    min-height: auto;
+    margin: 0; 
+    border-radius: 10px;
+    color: var(--darkerYellow);
+}
+
+}
+
+.project_title_name {
+    margin: 0;
+    color: var(--darkerYellow)
+  
+}
+
+.github_link {
+  color: var(--blue)
+}
+
+
+
+/*Media Queries; adjusts sizing per screen variations*/
+
+@media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+
+@media all and (min-width: 501px) and (max-width: 750px){
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+@media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+
+/* this is on the profile page */
+
+  .profile_interests_list {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.my_interests_list {
+    text-align: left;
+    padding: none;
+    line-height: 1;
+    margin: 5px 0;
+}
+
+
+/* This is on the Contact page; last page */
+
+.contact_page {
+  max-width: 500PX;
+  height: 100%;
+  text-align: center;
+  background-color: var(--blue);
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.contact_page_header {
+  color: var(--darkerYellow);
+  text-align: left;
+  padding-left: 5px;
+}
+
+.standard-label {
+  color: var(--darkerYellow);
+  text-align: left;
+}
+
+.form_input_section {
+  text-align: left;
+  padding: 5px;
+}
+
+/* This is the contact form */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  width: 200px;
+  background-color: var(--darkerYellow);
+  color: var(--blue);
+  padding: 5px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-info {
+  color: var(--darkerYellow)}
+
+
+
+/* Transition will be a 1.5x enlarged icon button for social media links */
+
+.icon_links {
+  transition: 0.2s;
+  width: 40px;
+  height: 40px;
+}
+
+.icon_links:hover {
+  transform: scale(1.5, 1.5);
+}
+
+
+/* This is the animation section */
+
+  .my_logo_slider_right {
+    animation-duration: 6s;
+    animation-name: logo_move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes logo_move {
+    from {
+      transform: translate(280px, 75px);
+    }
+    to {
+      transform: translate(910px, 48px);
+    }
+   }
+
+
