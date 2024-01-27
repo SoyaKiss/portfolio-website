@@ -22,15 +22,35 @@ nav {font-size: 16px;}
 
 
 /* This is for all anchor tags */
-a:link {color: var(--darkerBlue);}
-a:visited {color: var(--darkerBlue);}
-a:hover {color: var(--darkerYellow);}
-a:active {color: var(--blue);}
+a:link, a:visited {color: var(--darkerBlue);}
+a:hover, a:active {color: var(--darkerYellow);}
 
-/* This is for the links on the contact + portfolo; class name 'two' */
-a.two:link {color: var(--darkerYellow)}
-a.two:visited {color: var(--blue)}
-a.two:hover {color: var(--white)}
+
+
+/* This is for the links on the portfolo page to GitHub*/
+a.two:link, a.two:visited {
+  background-color: var(--darkerYellow);
+  color: var(--darkerBlue);
+  margin: 0 100px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+a.two:hover {color: var(--white);}
+
+
+
+
+/* This is for the links on the Contact page; telephone and contact me*/
+a.three:link, a.three:visited {
+  color: var(--darkerYellow);
+  }
+
+a.three:hover {color: var(--white)}
 
 
 /* This is the navigation list*/
@@ -193,6 +213,11 @@ instead of them being added to the width */
 }
 
 /* this is on the portfolio page; the GRID */
+
+.portfolio_title {
+  padding: 0 20px;
+}
+
 
 .grid {
     display: grid;
