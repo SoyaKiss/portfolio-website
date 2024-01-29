@@ -8,27 +8,49 @@
   --fontSize24: 24px;
 }
 
-
 /* This is the new Google Font that goes in the Body for all pages  */
 body {
-    font-family:'Darker Grotesque', sans-serif;
-    font-size: 22px;
-    font-weight: 500;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
 }
 
-
 /* This is the navigation bar */
-nav {font-size: 16px;}
-
+nav {
+  font-size: 16px;
+}
 
 /* This is for all anchor tags */
-a:link, a:visited {color: var(--darkerBlue);}
-a:hover, a:active {color: var(--darkerYellow);}
+a:link,
+a:visited {
+  color: var(--darkerBlue);
+}
 
+a:hover,
+a:active {
+  color: var(--darkerYellow);
+}
 
+a.one {
+  background-color: var(--white);
+  color: var(--darkerBlue);
+  border: 2px solid var(--blue);
+  padding: 10px 25px;
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 20px 50px;
+  display: inline-block;
+}
 
-/* This is for the links on the portfolo page to GitHub*/
-a.two:link, a.two:visited {
+a.one:hover {
+  background-color: var(--blue);
+  color: var(--darkerYellow);
+}
+
+/* This is for the links on the portfoloo page to GitHub */
+a.two:link,
+a.two:visited {
   background-color: var(--darkerYellow);
   color: var(--darkerBlue);
   margin: 0 100px;
@@ -38,57 +60,60 @@ a.two:link, a.two:visited {
   display: flex;
   align-items: center;
   justify-content: center;
-  }
+}
 
-a.two:hover {color: var(--white);}
+a.two:hover {
+  color: var(--white);
+}
 
-
-
-
-/* This is for the links on the Contact page; telephone and contact me*/
-a.three:link, a.three:visited {
+/* This is for the links on the Contact page; telephone and contact me */
+a.three:link,
+a.three:visited {
   color: var(--darkerYellow);
-  }
+}
 
-a.three:hover {color: var(--white)}
+a.three:hover {
+  color: var(--white);
+}
 
+/* This is the navigation list */
+.navigation-list__item {
+  font-size: var(--fontSize24);
+}
 
-/* This is the navigation list*/
-.navigation-list__item {font-size: var(--fontSize24);}
+h1 {
+  color: var(--blue);
+}
 
-h1 {color: var(--blue);}
-
-
-/*This is the contact form */
+/* This is the contact form */
 .standard-label {
-    font-size: var(--fontSize24);
+  font-size: var(--fontSize24);
 }
 
-/*Address, Telephone number and to Email Me*/
+/* Address, Telephone number and to Email Me */
 .contact-info {
-    font-size: 18px;
-    margin: 10px;
-    padding: 10px;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
 }
 
-/*Icons 8 shout-out*/
+/* Icons 8 shout-out */
 .icons_note {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-
-/*This is table items in Profile Section*/
+/* This is table items in Profile Section */
 .skill_title_headers {
-    font-size: var(--fontSize24);
+  font-size: var(--fontSize24);
 }
 
 .me_title_header {
-    font-size: var(--fontSize24);
-    font-style: italic;
+  font-size: var(--fontSize24);
+  font-style: italic;
 }
 
 .table_body_items {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 table {
@@ -97,7 +122,8 @@ table {
   padding: 0 20px;
 }
 
-th, td {
+th,
+td {
   padding: 8px;
   text-align: left;
 }
@@ -116,100 +142,93 @@ tr:hover {
   background-color: var(--darkerYellow);
 }
 
+/* this is for the buttons */
 
-/*this is for the buttons*/
-
-.primary_button, 
+.primary_button,
 .button {
-    background-color: var(--white);
-    color: var(--darkerBlue);
-    border: 2px solid var(--blue);
-    padding: 10px 20px;
-    border-radius: 12px;
-    cursor: pointer;
-    opacity: 0.6;
-        
+  background-color: var(--white);
+  color: var(--darkerBlue);
+  border: 2px solid var(--blue);
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 .primary_button:hover,
 .button:hover {
-    background-color: var(--blue);
-    color: var(--darkerYellow);
-    opacity: 1;
+  background-color: var(--blue);
+  color: var(--darkerYellow);
+  opacity: 1;
 }
-
-
-
 
 .profile__portrait {
-    float: left;
-    width: 224px;
-    margin-right: 40px;
-    border-radius: 50%;
+  float: left;
+  width: 224px;
+  margin-right: 40px;
+  border-radius: 50%;
 }
 
-
-
-/*This is the footer section*/
+/* This is the footer section */
 
 .page-footer {
-    clear: both;
-    display: flex;
-    position: relative;
-    text-align: center;
+  clear: both;
+  display: flex;
+  position: relative;
+  text-align: center;
 }
-
 
 /* on Index Page */
 
 .profile {
-    max-width: 700px;
-    margin: 0 auto;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .my-intro-text {
-    text-align: left;
+  text-align: left;
 }
 
-/* this is the default setting for overall width + padding + margins. Forces padding and border to be included in final width 
+/* this is the default setting for overall width + padding + margins. Forces padding and border to be included in final width
 instead of them being added to the width */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.page-footer, .icons_note {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.page-footer,
+.icons_note {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-
 
 /* This is the page header/navigation bar */
 
 .page-header {
-    display: flex;
-    width: 100%;
-    padding: 20px;
+  display: flex;
+  width: 100%;
+  padding: 20px;
 }
 
 .page-header__item {
-    flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
-    flex-grow: 1;
-    text-align: right;
+  flex-grow: 1;
+  text-align: right;
 }
 
 /* Navigation Lists, my Profile List */
-.navigation-list, .my_interests_list {
-    list-style-type: none;
+.navigation-list,
+.my_interests_list {
+  list-style-type: none;
 }
 
 .navigation-list li {
-    display: inline-block;
-    margin-left: 25px;
+  display: inline-block;
+  margin-left: 25px;
 }
 
 /* this is on the portfolio page; the GRID */
@@ -218,121 +237,118 @@ instead of them being added to the width */
   padding: 0 20px;
 }
 
-
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
-
 
 /* start grid fallback */
 .grid__item {
-    display: inline-block;
-    width: 33%;
-    padding: 20px;
+  display: inline-block;
+  width: 33%;
+  padding: 20px;
 }
 
 /* end grid fallback */
 
 @supports (display:grid) {
-.grid {
+  .grid {
     display: grid;
+
     /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     margin: 0;
-}
+  }
 
-
-.grid__item {
+  .grid__item {
     background-color: var(--blue);
     width: auto;
     min-height: auto;
-    margin: 0; 
+    margin: 0;
     border-radius: 10px;
     color: var(--darkerYellow);
-}
-
+  }
 }
 
 .project_title_name {
-    margin: 0;
-    color: var(--darkerYellow)
-  
+  margin: 0;
+  color: var(--darkerYellow);
 }
 
 .github_link {
-  color: var(--blue)
+  color: var(--blue);
 }
 
-
-
-/*Media Queries; adjusts sizing per screen variations*/
+/* Media Queries; adjusts sizing per screen variations */
 
 @media all and (max-width: 500px) {
-    .grid {
-      grid-template-columns: 1fr;
-      grid-gap: 10px;
-    }
-    .grid__item:last-child {
-      grid-column: auto / auto;
-      grid-row: auto / auto;
-    }
-    h1 {
-      font-size: 22px;
-    }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
 
-
-@media all and (min-width: 501px) and (max-width: 750px){
-    .grid {
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 10px;
-    }
-    .grid__item:last-child {
-      grid-column: auto / auto;
-      grid-row: auto / auto;
-    }
-    h1 {
-      font-size: 22px;
-    }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
   }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media all and (min-width: 501px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
 
 @media all and (max-width: 750px) {
-    .grid {
-      grid-gap: 10px;
-    }
-    .grid__item:last-child {
-      grid-column: auto / auto;
-      grid-row: auto / auto;
-    }
-    h1 {
-      font-size: 22px;
-    }
+  .grid {
+    grid-gap: 10px;
   }
 
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
 
 /* this is on the profile page */
 
-  .profile_interests_list {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 20px;
+.profile_interests_list {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .my_interests_list {
-    text-align: left;
-    padding: none;
-    line-height: 1;
-    margin: 5px 0;
+  text-align: left;
+  padding: none;
+  line-height: 1;
+  margin: 5px 0;
 }
-
 
 /* This is on the Contact page; last page */
 
 .contact_page {
-  max-width: 500PX;
+  max-width: 500px;
   height: 100%;
   text-align: center;
   background-color: var(--blue);
@@ -357,7 +373,8 @@ instead of them being added to the width */
 }
 
 /* This is the contact form */
-input[type=text], select {
+input[type=text],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -378,9 +395,8 @@ input[type=submit] {
 }
 
 .contact-info {
-  color: var(--darkerYellow)}
-
-
+  color: var(--darkerYellow);
+}
 
 /* Transition will be a 1.5x enlarged icon button for social media links */
 
@@ -394,24 +410,22 @@ input[type=submit] {
   transform: scale(1.5, 1.5);
 }
 
-
 /* This is the animation section */
 
-  .my_logo_slider_right {
-    animation-duration: 6s;
-    animation-name: logo_move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+.my_logo_slider_right {
+  animation-duration: 6s;
+  animation-name: logo_move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes logo_move {
+  from {
+    transform: translate(280px, 75px);
   }
 
-  @keyframes logo_move {
-    from {
-      transform: translate(280px, 75px);
-    }
-    to {
-      transform: translate(910px, 48px);
-    }
-   }
-
-
+  to {
+    transform: translate(910px, 48px);
+  }
+}
